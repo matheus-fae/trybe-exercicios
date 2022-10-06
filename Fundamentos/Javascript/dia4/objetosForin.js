@@ -6,3 +6,6 @@ let info = {
   };
   console.log(`Bem-vinda, ${info.personagem}`);
   console.log(info);
+  for (let key in info) {
+    console.log(key);
+  }
