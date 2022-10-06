@@ -9,3 +9,6 @@ let info = {
   for (let key in info) {
     console.log(key);
   }
+  for (key in info) {
+    console.log(info[key]);
+  }
