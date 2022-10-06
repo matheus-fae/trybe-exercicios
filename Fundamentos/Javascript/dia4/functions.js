@@ -38,3 +38,18 @@ function menorValor(array) {
 
 const arrayMenorValor = [2, 4, 6, 7, 10, 0, -3];
 console.log(menorValor(arrayMenorValor));
+
+function maiorString(array) {
+    let maior = 0;
+    let resultado = '';
+    for (let i = 0; i < array.length; i += 1) {
+        if (array[i].length > maior){
+            maior = array[i].length;
+            resultado = array[i];
+        }
+    }
+    return resultado;
+}
+
+const arrayStrings = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
+console.log(maiorString(arrayStrings));
