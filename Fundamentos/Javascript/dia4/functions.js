@@ -14,7 +14,7 @@ function maiorValor(array) {
     let maior = 0;
     let indice = 0;
     for (let i = 0; i < array.length; i += 1) {
-        if (array[i] >  maior) {
+        if (array[i] >  maior) {    
             maior = array[i];
             indice = i;
         }
@@ -53,3 +53,29 @@ function maiorString(array) {
 
 const arrayStrings = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
 console.log(maiorString(arrayStrings));
+
+function numeroRepetido(array) {
+    let maisRepetido = 0;
+
+    for (let index = 0; index < array.length; index += 1) {
+        let vezesRepetido = 0;
+        let numRepetido = array[index];
+
+        for (let i = 0; i < array.length; i += 1) {
+            if (numRepetido == array[i]) {
+                vezesRepetido += 1;
+            }
+
+            if (vezesRepetido > maisRepetido) {
+                maisRepetido = array[index]
+            }
+        }
+
+    }
+
+    return `numero mais repetido: ${maisRepetido}`
+}
+
+let numeros = [2, 3, 2, 5, 8, 2, 3];
+console.log(numeroRepetido(numeros))
+
